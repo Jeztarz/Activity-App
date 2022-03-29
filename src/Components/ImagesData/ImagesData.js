@@ -1,0 +1,30 @@
+export const ImagesData = [
+    {
+      image:
+        './Images/Activity-Pictures/running.png'
+    },
+    {
+      image:
+        './Images/Activity-Pictures/batminton.png'
+    },
+    {
+      image:
+        './Images/Activity-Pictures/bike.png'
+    },
+    {
+      image:
+        './Images/Activity-Pictures/jump.png'
+    },
+    {
+      image:
+        './Images/Activity-Pictures/swiming.png'
+    },
+    {
+      image:
+        './Images/Activity-Pictures/walk.png'
+    },
+    {
+      image:
+        './Images/Activity-Pictures/weight.png'
+    },  
+];

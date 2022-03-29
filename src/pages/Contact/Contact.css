@@ -1,0 +1,16 @@
+.box-text {
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(to right, rgb(190, 75, 156) , rgb(97, 4, 134));
+    width: 80%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    margin-top: 5%;
+    text-shadow: 2px 1px 4px #ffffffd7;
+    box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055);
+}
+
