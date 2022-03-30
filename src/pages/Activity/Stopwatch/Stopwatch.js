@@ -52,12 +52,19 @@ function Stopwatch() {
 
 
   return (
-    <div className="main-section">
-     
-          <div className="stopwatch">
-               <DisplayStopWatch time={time}/>
-               <ActivitySelect />
-               <BtnComponent status={status} resume={resume} reset={reset} stop={stop} start={start}/>
+    <div className="container main-section">
+        
+      <div className="stopwatch">
+        <DisplayStopWatch time={time}/>
+      </div>
+
+      <div>
+        <ActivitySelect />
+      </div>
+            
+
+      <div className="stopwatch">
+        <BtnComponent status={status} resume={resume} reset={reset} stop={stop} start={start}/>
           </div>
      
     </div>
