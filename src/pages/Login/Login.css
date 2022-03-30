@@ -3,7 +3,7 @@
     border-radius: 40px;
     backdrop-filter: blur(20px);
     background-image: linear-gradient(to right, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
-    width: 80%;
+    width: 100%;
     color: aliceblue;
     display: flex;
     justify-content: center;

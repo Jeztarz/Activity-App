@@ -1,5 +1,5 @@
-import React from 'react'
-import Stopwatch from './Stopwatch/Stopwatch';
+
+import Stopwatch from "./Stopwatch/Stopwatch";
 
 const Activity = () => {
   return (

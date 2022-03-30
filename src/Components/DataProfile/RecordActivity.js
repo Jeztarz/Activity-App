@@ -1,7 +1,4 @@
-import React from 'react'
-
-
-const Record = () => {
+function Record() {
   return (
   
       <div className='box-right'>

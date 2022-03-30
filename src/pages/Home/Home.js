@@ -1,13 +1,13 @@
-import React from 'react'
-import './Home.css'
+
+import EditProfile from '../../Components/EditProfile/EditProfile';
 
 
 const Home = () => {
   return (
-    <div className="container">
+    <div>
     
+    <EditProfile />
     
-    <img src='./Images/newBrand.png' className='Logopage' alt='logo'/>
     
     
   </div>

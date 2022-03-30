@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import { useState } from 'react';
 import DisplayStopWatch from './DisplayStopwatch';
 import ActivitySelect from './ActivitySelect';
 import BtnComponent from './BtnComponent';

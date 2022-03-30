@@ -1,9 +1,8 @@
-import React from 'react'
 
-
-const UserProfile = () => {
+function UserProfile() {
     return (
         <div className='profile'>
+    
         <div>
           <img src='./Images/PROFILE.png' alt='profile-pic' className='pro-pic' />
         </div>
@@ -32,14 +31,11 @@ const UserProfile = () => {
         <img src='./Images/goal/badge-300days.png' alt='Achievement'/>
 
 
-        <button type="button" className="edit-profile">
-            edit
+        <button type="button" className="edit-profile" >
+          edit
         </button>
-
-          
+        
         </div>
-
-
 
 
       </div>

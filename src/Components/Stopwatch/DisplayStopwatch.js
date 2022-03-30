@@ -1,5 +1,3 @@
-import React from 'react';
-
 function DisplayStopWatch(props) {
   const h = () => {
      if(props.time.h === 0){
