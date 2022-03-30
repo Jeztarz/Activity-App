@@ -1,0 +1,33 @@
+
+.form-actType {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.typeInput input {
+    border: none;
+    border-radius: 7px;
+    color: rgb(93, 92, 92);
+    margin-bottom: 5px;
+    transition: all 250ms ease-in-out;
+    text-align: center;
+}
+.typeInput input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 1px #be1268fa;
+}
+
+.typeInput textarea {
+    border: none;
+    border-radius: 7px;
+    min-width: 18em;
+    color: rgb(93, 92, 92);
+    margin-bottom: 5px;
+    transition: all 250ms ease-in-out;
+}
+
+.typeInput textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px 1px #be1268fa;
+}

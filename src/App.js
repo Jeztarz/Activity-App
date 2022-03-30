@@ -6,13 +6,12 @@ import {
 } from 'react-router-dom';
 
 
-// import Activity from './pages/Activity/Activity';
-// import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile'
 import Navbar from './Components/Navbar/Navbar';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Signup';
+import Activity from './pages/Activity/Activity';
 
 const App = () => {
   return (
@@ -23,9 +22,9 @@ const App = () => {
         <Route path="/" exact>
           <Home/>
         </Route>
-        {/* <Route path="/activity" exact>
+        <Route path="/activity" exact>
           <Activity/>
-        </Route> */}
+        </Route>
         <Route path="/profile" exact>
           <Profile/>
         </Route>

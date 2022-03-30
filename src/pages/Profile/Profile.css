@@ -4,8 +4,6 @@
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
-    padding: 3%;
-    margin-top: 5%;
 }
 
 /* box left */
@@ -53,8 +51,9 @@
 
 /* box right */
 .box-right {
-    width: 69%;
+    width: 100%;
     padding: 2%;
+    margin: 10px 0;
     border-radius: 40px;
     backdrop-filter: blur(30px);
     background-image: linear-gradient(to right,rgba(176, 41, 230, 0.52), rgba(221, 109, 187, 0.794));

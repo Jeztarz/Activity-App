@@ -1,0 +1,121 @@
+.mainActivityPage {
+  border-radius: 40px;
+  backdrop-filter: blur(20px);
+  background-image: linear-gradient(to left, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
+  width: 70%;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 2px 1px 4px #ffffffd7;
+  box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055);
+}
+
+.button {
+    background-color: rgb(243, 82, 157);
+    border: none;
+    border-radius: 40px;
+    color: rgb(100, 8, 57);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow:2px 3px 4px rgb(156, 39, 62);
+}
+.button:hover{
+  background: rgb(231, 68, 155);
+  color: #fff;
+  box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055)
+}
+
+.timerActivity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.duration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.activity {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.button-record {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+
+
+.addAc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.addActivity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+/* images */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.s-select{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.image {
+  height: 180px;
+  padding: 0 40px;
+}
+
+.right-arrow {
+  cursor: pointer;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.left-arrow {
+  cursor: pointer;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+
+}

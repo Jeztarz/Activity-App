@@ -27,8 +27,6 @@ function UserProfile() {
             Achievement
             
           </div>
-        <img src='./Images/goal/badge-run10k.png' alt='Achievement' />
-        <img src='./Images/goal/badge-300days.png' alt='Achievement'/>
 
 
         <button type="button" className="edit-profile" >

@@ -1,0 +1,19 @@
+.acitivity-right-timer-time{
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.acitivity-right-timer-time span {
+    font-size: 30px;
+}
+.acitivity-right-timer-time div {
+    display: flex;
+    justify-content: center;
+}
+
+.startStop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}

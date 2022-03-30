@@ -79,31 +79,21 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/activity" exact>
                 Activity
               </NavLink> 
-            </li> */}
+            </li>
 
             <li className="nav-item">
               <NavLink className="nav-link" to="/profile" exact>
                 Profile
               </NavLink>
-            </li>
-            <li className="nav-item">
-             
-            </li>
-            {/* <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" exact>
-                Contact Us
-              </NavLink>
             </li> */}
+          
+            
             <li className="nav-item">
               <NavLink className="nav-link" to="/login" exact>
                 Login
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink className="nav-link" to="/register" exact>
-                Register
-              </NavLink>
-            </li> */}
+            
         </ul>
       </div>
   </nav>
