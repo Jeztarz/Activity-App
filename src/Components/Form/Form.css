@@ -1,8 +1,12 @@
+.typeInput {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .form-actType {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .typeInput input {
@@ -31,3 +35,12 @@
     outline: none;
     box-shadow: 0px 0px 10px 1px #be1268fa;
 }
+
+.typeInput label {
+    font-size: 20px;
+}
+
+#duration {
+    font-size: 30px
+}
+

@@ -7,7 +7,6 @@ import {
 
 
 import Home from './pages/Home/Home';
-import Profile from './pages/Profile/Profile'
 import Navbar from './Components/Navbar/Navbar';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Signup';
@@ -22,21 +21,23 @@ const App = () => {
         <Route path="/" exact>
           <Home/>
         </Route>
+
         <Route path="/activity" exact>
           <Activity/>
         </Route>
-        <Route path="/profile" exact>
+
+        {/* <Route path="/profile" exact>
           <Profile/>
-        </Route>
-        {/* <Route path="/contact" exact>
-          <Contact/>
         </Route> */}
+        
         <Route path="/login" exact>
           <Login/>
         </Route>
+
         <Route path="/register" exact>
           <Register/>
         </Route>
+
         <Redirect to="/"/>
       </Switch>
     </main>

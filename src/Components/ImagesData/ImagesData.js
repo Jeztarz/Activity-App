@@ -1,30 +1,43 @@
 export const ImagesData = [
     {
       image:
-        './Images/Activity-Pictures/running.png'
+        './Images/Activity-Pictures/running.png',
+        label:'Running'
     },
+
     {
       image:
-        './Images/Activity-Pictures/batminton.png'
+        './Images/Activity-Pictures/badminton.png',
+      label:'Badminton'
     },
+
     {
       image:
-        './Images/Activity-Pictures/bike.png'
+        './Images/Activity-Pictures/bike.png',
+      label:'Bike'
     },
+
     {
       image:
-        './Images/Activity-Pictures/jump.png'
+        './Images/Activity-Pictures/jump.png',
+      label:'Jumping'
     },
+
     {
       image:
-        './Images/Activity-Pictures/swiming.png'
+        './Images/Activity-Pictures/swimming.png',
+      label:'Swimming'
     },
+
     {
       image:
-        './Images/Activity-Pictures/walk.png'
+        './Images/Activity-Pictures/walk.png',
+      label:'Walking'
     },
+
     {
       image:
-        './Images/Activity-Pictures/weight.png'
+        './Images/Activity-Pictures/weight.png',
+      label:'Weight'
     },  
 ];

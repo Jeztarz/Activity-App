@@ -2,12 +2,13 @@
 
 body {
   font-family: 'Varela Round', sans-serif;
-  background-color: #e4b9f5;
-}
+  background-color: rgb(228, 185, 245);
+  }
+
+  
 * {
   margin: 0;
   padding: 0;
-  
 }
 i {
   margin-right: 10px;
@@ -21,8 +22,6 @@ i {
 .navbar-mainbg {
   background-image: linear-gradient(to right, rgb(159, 1, 234, 0.5) , rgb(159, 1, 234, 0.5));
   padding: 0px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 #navbarSupportedContent {
   overflow: hidden;

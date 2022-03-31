@@ -1,3 +1,5 @@
+import { USER_NAME,ABOUT_ME } from '../userDataMogUp/userDataMogUp'
+
 
 function UserProfile() {
     return (
@@ -9,24 +11,16 @@ function UserProfile() {
 
         {/* data profile */}
         <div className='data-profile'>
-        Name
+        {USER_NAME}
         
           <div className='data-profile-user'>
             AboutMe
             <br/>
-            I'm hungry
+            {ABOUT_ME}
           </div>
           
-          <div className='data-profile-user'>
-            Email
-            <br/>
-            activity@gmail.com
-          </div>
           
-          <div className='data-profile-user'>
-            Achievement
-            
-          </div>
+          
 
 
         <button type="button" className="edit-profile" >

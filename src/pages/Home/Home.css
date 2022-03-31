@@ -1,7 +1,182 @@
-.userAndAdd {
+.record-box-main {
+    width: 100%;
+    color: aliceblue;
     display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 25px;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.userAndAddTop {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.BoxDown {
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
-    margin-top: 2%;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(to top, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+
+
+
+
+/* box left */
+.profile{
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(to bottom, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
+
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+.pro-pic {
+    margin-bottom: 5px;
+}
+.data-profile {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 3px;
+    font-size: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.data-profile-user {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin: 7px;
+    padding: 10px 8px;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+
+
+
+/* box right */
+.box-right {
+    width: 69%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(to bottom, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
+
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+.data-result {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin: 7px;
+    padding: 10px 8px;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+}
+
+.goal {
+    text-shadow: 2px 3px 4px rgba(97, 93, 93, 0.935);
+}
+
+
+/* button */
+.button-plus {
+    background-color: #aa238d;
+    border: none;
+    font-size: 2em;
+    color: aliceblue;
+    width: 50px;
+    transition: background 1s;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 6px 7px;
+}
+
+.button-plus:hover {
+    background: #b83280;
+    color: #fff;
+}
+
+.top-plus {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.data-activity {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-bottom: 7px;
+    padding: 10px 8px;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+    
+}
+
+.data-activity-user {
+    border: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.edit-profile {
+    background-color: rgba(223, 62, 210, 0.65);
+    margin-top: 15px;
+    font-size: 20px;
+    width: 100%;
+    transition: background 1s;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #cd52e662;
+    border-radius: 10px;
+    color: rgb(129, 33, 73);
+    margin-top: 15px;
+    box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
+}
+
+.edit-profile:hover {
+    background-color:#f891cd;
 }
