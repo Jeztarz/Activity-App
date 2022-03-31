@@ -55,24 +55,22 @@
     color: rgb(255, 255, 255);
     margin: 3px;
     font-size: 30px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 .data-profile-user {
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255, 0.4);
-    backdrop-filter: blur(30px);
     display: flex;
     color: rgb(255, 255, 255);
-    margin: 7px;
     padding: 10px 8px;
     font-size: 18px;
     width: 100%;
     justify-content: center;
     box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
+    margin-bottom: 5px;
 }
 
 
@@ -111,23 +109,7 @@
 
 
 
-/* button */
-.button-plus {
-    background-color: #aa238d;
-    border: none;
-    font-size: 2em;
-    color: aliceblue;
-    width: 50px;
-    transition: background 1s;
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 6px 7px;
-}
 
-.button-plus:hover {
-    background: #b83280;
-    color: #fff;
-}
 
 .top-plus {
     width: 100%;
@@ -135,6 +117,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
+    
 }
 
 .data-activity {
@@ -150,6 +133,7 @@
     justify-content: center;
     box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
     
+    
 }
 
 .data-activity-user {
@@ -161,16 +145,16 @@
 }
 
 .edit-profile {
-    background-color: rgba(223, 62, 210, 0.65);
-    margin-top: 15px;
-    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20px;
+    font-size: 15px;
     width: 100%;
     transition: background 1s;
     border-style: solid;
     border-width: 2.5px;
-    border-color: #cd52e662;
+    border-color: #c84ba1a7;
     border-radius: 10px;
-    color: rgb(129, 33, 73);
+    color: rgb(180, 34, 95);
     margin-top: 15px;
     box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
 }

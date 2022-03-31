@@ -19,10 +19,12 @@ function UserProfile() {
             {ABOUT_ME}
           </div>
           
+          <div className='data-profile-user'>
+            AboutMe
+            <br/>
+            {ABOUT_ME}
+          </div>
           
-          
-
-
         <button type="button" className="edit-profile" >
           edit
         </button>
