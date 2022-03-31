@@ -4,22 +4,22 @@ function RecordActivity() {
   return (
       <div className='BoxDown'>
         <div className='top-plus'>
-          <div className='data-result goal'>
+          <div className='data-result'>
             GOAL
             <br/>
             5000 min
           </div>
-          <div className='data-result goal'>
+          <div className='data-result'>
             CURRENT TOTAL
             <br/>
             50 min
           </div>
-          <div className='data-result goal'>
+          <div className='data-result'>
             CALORIES GOAL
             <br/>
             8000 min
           </div>
-          <div className='data-result goal'>
+          <div className='data-result'>
             CURRENT TOTAL
             <br/>
             324 cals
@@ -32,7 +32,7 @@ function RecordActivity() {
       </div>
 
       {/* =========row for data */}
-      <div className='data-activity goal'>
+      <div className='data-activity'>
         <div className='data-activity-user'>
           DATE
         </div>&nbsp;|&nbsp;
@@ -47,8 +47,8 @@ function RecordActivity() {
         </div>&nbsp;&nbsp;
       </div>
 
-
-      <div className='data-activity goal'>
+      
+      <div className='data-activity'>
         <div className='data-activity-user'>
           13 / 06 /2022
         </div>&nbsp;|&nbsp;
@@ -62,7 +62,7 @@ function RecordActivity() {
           324
         </div>&nbsp;&nbsp;
       </div>
-
+      
       
     </div>
 
