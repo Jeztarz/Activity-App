@@ -1,8 +1,8 @@
 
 import './Home.css'
 import Activity from '../Activity/Activity'
-import UserProfile from '../../Components/DataProfile/UserProfile';
 import RecordActivity from '../../Components/DataProfile/RecordActivity';
+import Profile from '../Profile/Profile';
 
 const Home = () => {
 
@@ -11,7 +11,8 @@ const Home = () => {
     <div className="record-box-main">
       
       <div className='userAndAddTop'>
-        <UserProfile />
+
+        <Profile />
 
         <Activity />
       </div>

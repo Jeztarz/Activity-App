@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Form(props) {
+    
+
   return (
     <>
         <div className='form-actType'>

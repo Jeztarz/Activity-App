@@ -11,6 +11,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Signup';
 import Activity from './pages/Activity/Activity';
+// import Profile from './pages/Profile/Profile'
 
 const App = () => {
   return (

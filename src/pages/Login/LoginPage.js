@@ -33,6 +33,9 @@ const LoginPage = () => {
       <button type="button" className="btn">
         Login
       </button>
+      <button type="button" className="btn">
+        SignUp
+      </button>
       
     </div>
   )

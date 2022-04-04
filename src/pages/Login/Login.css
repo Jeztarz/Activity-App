@@ -60,8 +60,8 @@
     border-radius: 10px;
     color: azure;
     margin-top: 15px;
+    width: 40%;
     box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
-        
 }
 
 .btn:hover {

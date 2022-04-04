@@ -35,17 +35,30 @@
 }
 
 
-.submit {
-    border: 2px double #c31079;
+
+
+.editProfile {
     border-radius: 10px;
-    color: #b4096dd2;
-    margin-top: 15px;
-    background-color:rgba(0, 255, 255, 0);
-    font-size: 20px;
+    border: none;
     width: 100%;
-    transition: background 1s;
 }
 
-.submit:hover {
-    background-color:#f891cd;
+.editProfileUserName {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff0f9a6;
+}
+
+.data-profile-edit {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 3px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

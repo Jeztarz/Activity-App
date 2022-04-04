@@ -33,7 +33,7 @@
 
 
 /* box left */
-.profile{
+.profile {
     width: 29%;
     display: flex;
     justify-content: center;
@@ -87,7 +87,6 @@
     border-radius: 40px;
     backdrop-filter: blur(30px);
     background-image: linear-gradient(to bottom, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
-
     box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
 }
 
@@ -161,4 +160,36 @@
 
 .edit-profile:hover {
     background-color:#f891cd;
+}
+
+@media screen and (max-width: 991px) {
+    .BoxDown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+    .userAndAddTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .box-right {
+        width: 100%;
+    }
+
+    .top-plus {
+       display: flex;
+       flex-direction: column;
+    }
+
+    
 }

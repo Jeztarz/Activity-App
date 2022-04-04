@@ -5,7 +5,7 @@ function RecordActivity() {
       <div className='BoxDown'>
         <div className='top-plus'>
           <div className='data-result'>
-            GOAL
+            DISTANCE GOAL
             <br/>
             5000 min
           </div>
@@ -17,7 +17,7 @@ function RecordActivity() {
           <div className='data-result'>
             CALORIES GOAL
             <br/>
-            8000 min
+            8000 cals
           </div>
           <div className='data-result'>
             CURRENT TOTAL
