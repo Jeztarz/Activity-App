@@ -70,14 +70,4 @@
     box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055)
 }
 
-.click-signup {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-}
 
-.button-signup {
-    font-size: 14px;
-    text-decoration: none;
-    
-}

@@ -3,6 +3,7 @@ import EditProfile from '../../Components/EditProfile/EditProfile'
 import { useState } from 'react'
 
 
+
 function Profile(props) {
 const [EditProfileForm, setEditProfileForm] = useState(false)
 const [profileName, setProfileName] = useState('ActivityName')
@@ -26,6 +27,10 @@ const [favorite, setFavorite] = useState('Running')
     setFavorite(fav)
   }
   
+  
+
+  
+
 
   return (
     <div className='profile'>
@@ -40,6 +45,7 @@ const [favorite, setFavorite] = useState('Running')
             aboutMe={aboutMe}
             editFavorite={editFavorite}
             favorite={favorite}
+            
             /> : 
             <UserProfile 
             profileName={profileName}

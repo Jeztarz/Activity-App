@@ -22,10 +22,7 @@ const LoginPage = () => {
           <input type="password" name="password" placeholder="password" />
         </div>
       </div>
-      <div className='click-signup'>
-      <p>You don't have an account ? </p>
-      <p className='button-signup'>&nbsp;&nbsp;SignUp </p>
-      </div>
+      
       
 
       {/* button click login */}
@@ -33,7 +30,7 @@ const LoginPage = () => {
       <button type="button" className="btn">
         Login
       </button>
-      <button type="button" className="btn">
+      <button type="button" className="btn" style={{color:'#b31031'}}>
         SignUp
       </button>
       

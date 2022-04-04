@@ -1,6 +1,14 @@
 import "./EditProfile.css";
 
-function EditProfile({ profileName, editProfileName, aboutMe, editAboutMe, favorite, editFavorite}) {
+function EditProfile({ 
+  profileName, 
+  editProfileName, 
+  aboutMe, 
+  editAboutMe, 
+  favorite, 
+  editFavorite,
+}) {
+
   return (
     <div className="data-profile-edit">
       <input
@@ -36,6 +44,23 @@ function EditProfile({ profileName, editProfileName, aboutMe, editAboutMe, favor
           onChange={(e) => editFavorite(e.target.value)}
         />
       </div>
+
+      <input
+        type="text"
+        name="distance"
+        placeholder="enter you distance goal"
+        id="addDistance"
+        className="editProfileUserName"
+      />
+
+      <input
+        type="text"
+        name="cals"
+        placeholder="enter you calories goal"
+        id="addCals"
+        className="editProfileUserName"
+      />
+
     </div>
   );
 }
