@@ -1,10 +1,9 @@
 .record-box-main {
-    width: 100%;
     color: aliceblue;
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
-    padding: 25px;
+    padding: 18px;
     flex-direction: column;
 }
 
@@ -14,41 +13,8 @@
 }
 
 
-.BoxDown {
-    margin-top: 18px;
-    width: 100%;
-    height: 300px;
-    border: none;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    padding: 2%;
-    border-radius: 40px;
-    backdrop-filter: blur(30px);
-    background-image: linear-gradient(to top, rgba(221, 109, 187, 0.794) , rgba(176, 41, 230, 0.52));
-    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
-}
 
-.BoxDown::-webkit-scrollbar {
-    display: none;
-  }
 
-/* .BoxDown::-webkit-scrollbar {
-    width: 16px;
-  }
-  
-.BoxDown::-webkit-scrollbar-track {
-    background-color: none;
-    border-radius: 100px;
-  }
-.BoxDown::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to top, #f575bb, #d084f3 99%);
-    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-    border-radius: 100px;
-} */
 
 
 
@@ -72,7 +38,7 @@
 }
 .data-profile {
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(185, 14, 91);
     margin: 3px;
     font-size: 30px;
     display: flex;
@@ -84,7 +50,7 @@
     border-radius: 20px;
     background-color: rgb(255, 255, 255, 0.4);
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(169, 9, 102);
     padding: 10px 8px;
     font-size: 18px;
     width: 100%;
@@ -110,24 +76,6 @@
     box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
 }
 
-.data-result {
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255, 0.4);
-    backdrop-filter: blur(30px);
-    display: flex;
-    color: rgb(255, 255, 255);
-    margin: 7px;
-    padding: 10px 8px;
-    font-size: 20px;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
-}
-
-
-
-
 
 
 .top-plus {
@@ -136,7 +84,6 @@
     justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
-    
 }
 
 .data-activity {
@@ -144,15 +91,13 @@
     background-color: rgb(255, 255, 255, 0.4);
     backdrop-filter: blur(30px);
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(171, 42, 117);
     margin-bottom: 7px;
     padding: 10px 8px;
     font-size: 18px;
     width: 100%;
     justify-content: center;
     box-shadow: 2px 3px 8px rgba(154, 114, 137, 0.935);
-    
-    
 }
 
 .data-activity-user {
@@ -165,16 +110,13 @@
 
 .edit-profile {
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 20px;
     font-size: 15px;
     width: 100%;
     transition: background 1s;
-    border-style: solid;
-    border-width: 2.5px;
-    border-color: #c84ba1a7;
+    border: 2.5px solid #c84ba1a7;
     border-radius: 10px;
     color: rgb(180, 34, 95);
-    margin-top: 15px;
+    margin-top: 9px;
     box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
 }
 

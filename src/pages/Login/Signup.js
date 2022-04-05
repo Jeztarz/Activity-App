@@ -28,18 +28,15 @@ const Register = () => {
           <input type="password" name="password" placeholder="password" />
         </div>
       </div>
-      <div className='click-signup'>
-      <p>You have an account ? </p>
-      <p className='button-signup'>&nbsp;&nbsp;SignIn </p>
-      </div>
+      
       
 
       {/* button click login */}
       
-      <button type="button" className="btn">
-        Register
-      </button>
       
+      <button type="button" className="btn" style={{color:'#b31031'}}>
+        SignUp
+      </button>
     </div>
   )
 }

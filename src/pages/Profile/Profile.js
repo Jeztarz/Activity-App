@@ -27,10 +27,6 @@ const [favorite, setFavorite] = useState('Running')
     setFavorite(fav)
   }
   
-  
-
-  
-
 
   return (
     <div className='profile'>
@@ -53,7 +49,10 @@ const [favorite, setFavorite] = useState('Running')
             favorite={favorite}
             /> }
         <button type="button" className="edit-profile" onClick={EditSetting}>
-          { EditProfileForm ? 'done' : 'edit' }
+          { EditProfileForm ? 'Done' : 'Edit' }
+        </button>
+        <button type="button" className="edit-profile">
+          Logout
         </button>
     </div>
   )

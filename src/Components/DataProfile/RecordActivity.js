@@ -1,39 +1,20 @@
-import NewRecord from "./NewRecord";
 
 function RecordActivity() {
-  
+  const activityRecord = [{
+            __id: 'record-1',
+            activityName: 'Running',
+            timestamp: '13 / 6 / 2556',
+            duration: 40,
+            calories: 200,
+            description: '',
+        },
+        ];
 
   return (
       <div className='BoxDown'>
-        <div className='top-plus'>
-          <div className='data-result'>
-            DISTANCE GOAL
-            <br/>
-            0 min
-          </div>
-          <div className='data-result'>
-            CURRENT TOTAL
-            <br/>
-            0 min
-          </div>
-          <div className='data-result'>
-            CALORIES GOAL
-            <br/>
-            0 cals
-          </div>
-          <div className='data-result'>
-            CURRENT TOTAL
-            <br/>
-            0 cals
-          </div>
+        
 
-
-
-        {/* button + */}
       
-      </div>
-
-      {/* =========row for data */}
       <div className='data-activity'>
         <div className='data-activity-user'>
           DATE
@@ -50,15 +31,23 @@ function RecordActivity() {
       </div>
 
       
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
-      <NewRecord />
+    { activityRecord.map((activity) => {
+      return (
+      <div className='data-activity'>
+        <div className='data-activity-user'>
+          {activity.timestamp}
+        </div>&nbsp;|&nbsp;
+        <div className='data-activity-user'>
+          {activity.activityName}
+        </div>&nbsp;|&nbsp;
+        <div className='data-activity-user'>
+          {activity.duration} min
+        </div>&nbsp;|&nbsp;
+        <div className='data-activity-user'>
+          {activity.calories}
+        </div>&nbsp;&nbsp;
+      </div>
+  )})}
       
     </div>
 

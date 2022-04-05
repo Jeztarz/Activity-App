@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+body {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  background-color: rgba(239, 55, 153, 0.275);
+  }
+
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: none;
+  border-radius: 100px;
+}
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #f575bb 0%, #d084f3 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
