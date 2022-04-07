@@ -6,7 +6,7 @@ function Goal() {
         <div className='BoxDownGoal'>
             <div className='top-plus'>
                 <div className='data-result-goal'>
-                    DISTANCE GOAL
+                    DURATION GOAL
                     <br/>
                     0 min
                 </div>
