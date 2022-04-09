@@ -2,8 +2,22 @@
 
 body {
   font-family: 'Sawarabi Gothic', sans-serif;
-  background-color: rgba(239, 55, 153, 0.275);
-  }
+  background: linear-gradient(-45deg, #dc7353, #f05e96, #af67e9, #43e3be);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
   
 * {
@@ -11,7 +25,7 @@ body {
   padding: 0;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 16px;
 }
 
@@ -23,7 +37,7 @@ body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(180deg, #f575bb 0%, #d084f3 99%);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 100px;
-}
+} */
 
 body::-webkit-scrollbar {
     display: none;

@@ -1,5 +1,5 @@
 import './Login.css';
-// import Register from './Signup';
+import { Link } from 'react-router-dom'
 
 const LoginPage = () => {
   return (
@@ -28,10 +28,10 @@ const LoginPage = () => {
       {/* button click login */}
       
       <button type="button" className="btn">
-        Login
+        <Link to='/'>Login</Link> 
       </button>
       <button type="button" className="btn" style={{color:'#b31031'}}>
-        SignUp
+        <Link to='/register'>SignUp</Link> 
       </button>
       
     </div>

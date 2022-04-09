@@ -1,7 +1,7 @@
 import UserProfile from '../../Components/DataProfile/UserProfile'
 import EditProfile from '../../Components/EditProfile/EditProfile'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 
 
 function Profile(props) {
@@ -28,6 +28,7 @@ const [favorite, setFavorite] = useState('Running')
   }
   
 
+
   return (
     <div className='profile'>
         <div>
@@ -52,7 +53,9 @@ const [favorite, setFavorite] = useState('Running')
           { EditProfileForm ? 'Done' : 'Edit' }
         </button>
         <button type="button" className="edit-profile">
-          Logout
+         <Link to='/login'>
+         Logout
+          </Link> 
         </button>
     </div>
   )

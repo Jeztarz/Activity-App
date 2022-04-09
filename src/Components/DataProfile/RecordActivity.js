@@ -1,37 +1,28 @@
+import { useUserRecords } from '../../hooks';
+
 
 function RecordActivity() {
-  const activityRecord = [{
-            __id: 'record-1',
-            activityName: 'Running',
-            timestamp: '13 / 6 / 2556',
-            duration: 40,
-            calories: 200,
-            description: '',
-        },
-        ];
+  const [posts, setPosts] = useUserRecords();
 
   return (
       <div className='BoxDown'>
-        
-
-      
       <div className='data-activity'>
-        <div className='data-activity-user'>
+        <div className='data-activity-user fontW'>
           DATE
         </div>&nbsp;|&nbsp;
-        <div className='data-activity-user'>
+        <div className='data-activity-user fontW'>
           ACTIVITY
         </div>&nbsp;|&nbsp;
-        <div className='data-activity-user'>
+        <div className='data-activity-user fontW'>
           TIMES
         </div>&nbsp;|&nbsp;
-        <div className='data-activity-user'>
+        <div className='data-activity-user fontW'>
           CALORIES
         </div>&nbsp;&nbsp;
       </div>
 
       
-    { activityRecord.map((activity) => {
+    { posts.map((activity) => {
       return (
       <div className='data-activity'>
         <div className='data-activity-user'>

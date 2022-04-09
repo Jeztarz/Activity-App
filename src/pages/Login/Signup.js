@@ -1,5 +1,5 @@
 import './Login.css';
-
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -35,7 +35,7 @@ const Register = () => {
       
       
       <button type="button" className="btn" style={{color:'#b31031'}}>
-        SignUp
+        <Link to='/login'>SignUp </Link>
       </button>
     </div>
   )
