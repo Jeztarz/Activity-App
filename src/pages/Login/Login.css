@@ -1,6 +1,6 @@
 
 .login-page {
-    border-radius: 40px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4);
     width: 100%;
@@ -39,7 +39,7 @@
     min-width: 18em;
     height: 35px;
     padding: 0px 10px;
-    background-color: #e18cf6f6;
+    background-color: #e1d6e481;
     color: rgb(66, 66, 66);
     border: 0;
     border-radius: 20px;
@@ -56,11 +56,11 @@
 .btn {
     border-style: solid;
     border-width: 2.5px;
-    border-color: #de8feebd;
+    border-color: #bd6398bd;
     border-radius: 10px;
     color: azure;
     margin-top: 15px;
-    width: 40%;
+    width: 320px;
     box-shadow: 2px 3px 4px rgba(251, 251, 251, 0.055)
 }
 

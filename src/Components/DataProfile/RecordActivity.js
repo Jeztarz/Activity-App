@@ -1,8 +1,22 @@
-import { useUserRecords } from '../../hooks';
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function RecordActivity() {
-  const [posts, setPosts] = useUserRecords();
+  const [getFormRecords, setGetFormRecords] = useState([]);
+  
+  useEffect(() => {
+    axios({
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/users/me/records",
+    }).then((res) => {
+      setGetFormRecords(res.data);
+      console.log(res.data);
+      
+    });
+
+  },[])
+
 
   return (
       <div className='BoxDown'>
@@ -20,13 +34,15 @@ function RecordActivity() {
           CALORIES
         </div>&nbsp;&nbsp;
       </div>
-
       
-    { posts.map((activity) => {
+
+
+    { getFormRecords.map((activity) => {
       return (
-      <div className='data-activity'>
+      
+      <div className='data-activity' key={activity._id} >
         <div className='data-activity-user'>
-          {activity.timestamp}
+          {activity.timestamp.slice(0, 10)}
         </div>&nbsp;|&nbsp;
         <div className='data-activity-user'>
           {activity.activityName}
@@ -38,7 +54,7 @@ function RecordActivity() {
           {activity.calories}
         </div>&nbsp;&nbsp;
       </div>
-  )})}
+    )})}
       
     </div>
 

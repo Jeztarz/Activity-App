@@ -1,7 +1,8 @@
 import './DataProfile.css'
 
 function Goal() {
-
+   
+    
     return (
         <div className='BoxDownGoal'>
             <div className='top-plus'>

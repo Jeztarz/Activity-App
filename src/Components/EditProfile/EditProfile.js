@@ -47,9 +47,9 @@ function EditProfile({
 
       <input
         type="text"
-        name="distance"
-        placeholder="enter you distance goal"
-        id="addDistance"
+        name="duration"
+        placeholder="enter you duration goal"
+        id="addDuration"
         className="editProfileUserName"
       />
 

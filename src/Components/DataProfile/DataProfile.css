@@ -7,13 +7,13 @@
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
-    border-radius: 40px;
+    border-radius: 20px;
     backdrop-filter: blur(30px);
     
 }
 
 .data-result-goal {
-    border-radius: 30px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4);
     display: flex;
@@ -38,8 +38,8 @@
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    padding: 18px 35px;
-    border-radius: 40px;
+    padding: 18px 20px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4);
     

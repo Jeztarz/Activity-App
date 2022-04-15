@@ -14,10 +14,6 @@
 
 
 
-
-
-
-
 /* box left */
 .profile {
     width: 29%;
@@ -26,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2%;
-    border-radius: 40px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4);
     
@@ -68,7 +64,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2%;
-    border-radius: 40px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4);
 }
@@ -84,7 +80,7 @@
 }
 
 .data-activity {
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.592);
     display: flex;
     color: rgb(171, 42, 117);

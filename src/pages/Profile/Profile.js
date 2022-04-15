@@ -2,13 +2,14 @@ import UserProfile from '../../Components/DataProfile/UserProfile'
 import EditProfile from '../../Components/EditProfile/EditProfile'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import axios from 'axios';
 
 function Profile(props) {
 const [EditProfileForm, setEditProfileForm] = useState(false)
 const [profileName, setProfileName] = useState('ActivityName')
 const [aboutMe, setAboutMe] = useState('I`m hungry')
 const [favorite, setFavorite] = useState('Running')
+const [data, setData] = useState(null);
 
   const EditSetting = () => {
     setEditProfileForm(!EditProfileForm)
@@ -27,7 +28,14 @@ const [favorite, setFavorite] = useState('Running')
     setFavorite(fav)
   }
   
-
+  const logOut = () => {
+    axios({
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/users/logout",
+    });
+    setData(null);
+  }
 
   return (
     <div className='profile'>
@@ -52,7 +60,7 @@ const [favorite, setFavorite] = useState('Running')
         <button type="button" className="edit-profile" onClick={EditSetting}>
           { EditProfileForm ? 'Done' : 'Edit' }
         </button>
-        <button type="button" className="edit-profile">
+        <button type="button" className="edit-profile" onClick={logOut}>
          <Link to='/login'>
          Logout
           </Link> 

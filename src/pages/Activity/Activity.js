@@ -33,6 +33,7 @@ function Activity() {
       ...form,
       [e.target.name]: e.target.value,
     })
+    console.log(form)
   }
 
   const next = () => {
@@ -103,7 +104,7 @@ const Finsih = () => {
               </section>
                 <div className='button-record'>
                   <button className='button' onClick={Finsih}>
-                  RECORD
+                  record to your activity
                   </button>
                 </div>
               </div>
@@ -116,8 +117,6 @@ const Finsih = () => {
             </form>
           </div>
             
-        
-      
       </div>
     </div>
   )
