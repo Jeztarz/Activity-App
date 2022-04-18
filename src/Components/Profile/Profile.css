@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -15,10 +16,10 @@
     height: 500px;
     border-radius: 12px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     padding: 25px;
+    
 }
 
 .input-edit {
@@ -37,13 +38,9 @@
 
 
 
-.editProfile {
-    border-radius: 10px;
-    border: none;
-    width: 100%;
-}
 
-.editProfileUserName {
+
+.editUser {
     font-size: 18px;
     text-align: center;
     margin-bottom: 4px;
@@ -51,7 +48,28 @@
     border-radius: 10px;
     border: none;
     background-color: #fff0f9a6;
+    color: rgb(240, 48, 122);
 }
+
+.editUser:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 1px #b4096dd2;
+}
+
+.editUserAbout {
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff0f900;
+    color: rgb(240, 48, 122);
+}
+
+
+
 
 .data-profile-edit {
     width: 100%;

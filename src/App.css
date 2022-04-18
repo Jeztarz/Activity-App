@@ -1,27 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap');
 
 body {
-  font-family: 'Sawarabi Gothic', sans-serif;
-  background: linear-gradient(-45deg, #dc7353, #f05e96, #af67e9, #43e3be);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+	background-color: rgb(248, 178, 195);
+  box-sizing: border-box;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  max-height: fit-content;
 }
 
 body::-webkit-scrollbar {

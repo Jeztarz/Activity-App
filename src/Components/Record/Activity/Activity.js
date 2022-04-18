@@ -1,10 +1,10 @@
 import { useState, useEffect} from 'react';
 import './Activity.css'
-import Timer from '../../Components/Timer/Timer'
-import Form from '../../Components/Form/Form'
+import Timer from '../Timer/Timer'
+import Form from '../Form/Form';
 
 
-function Activity() {
+function Activity(props) {
   const ACITIVITIES_TYPE = [
     {label: 'Running', actSrc: '../../Images/Activity-Pictures/running.png' },
     {label: 'Badminton', actSrc: '../../Images/Activity-Pictures/badminton.png' },
@@ -113,7 +113,7 @@ const Finsih = () => {
           <div className='activityForm'>
             <h2>Your Activity </h2> 
             <form>
-              <Form form={form} setForm={setForm} handleChange={handleChange} />
+              <Form form={form} setForm={setForm} handleChange={handleChange} setActivityForm={props.setActivityForm} />
             </form>
           </div>
             
