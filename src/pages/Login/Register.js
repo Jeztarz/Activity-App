@@ -17,7 +17,7 @@ const Register = () => {
         displayName: registerName,
       },
       withCredentials: true,
-      url: "https://myrealityweb-backend.azurewebsites.net/users/register",
+      url: "http://localhost:4000/users/register",
     }).then((res) => {
       console.log(res);
       if(res.data === "User Created"){

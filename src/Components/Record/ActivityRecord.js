@@ -1,23 +1,7 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+
 import './ActivityRecord.css'
 
-function ActivityRecord() {
-  const [getFormRecords, setGetFormRecords] = useState([]);
-  
-  useEffect(() => {
-    axios({
-      method: "GET",
-      withCredentials: true,
-      url: "http://localhost:4000/users/me/records",
-    }).then((res) => {
-      setGetFormRecords(res.data);
-      console.log(res.data);
-      
-    });
-
-  },[])
-
+function ActivityRecord(props) {
   
   return (
     <div className="BoxDown">
@@ -28,11 +12,11 @@ function ActivityRecord() {
         <div className="data-activity-user fontW">CALORIES</div>&nbsp;&nbsp;
       </div>
 
-      {getFormRecords.map((activity) => {
+      {props.getFormRecords.map((activity) => {
         return (
           <div className="data-activity" key={activity._id}>
             <div className="data-activity-user">
-              {activity.timestamp}
+              {activity.timestamp && activity.timestamp.slice(0, 10)}
             </div>
             &nbsp;|&nbsp;
             <div className="data-activity-user">

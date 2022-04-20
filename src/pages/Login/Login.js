@@ -15,7 +15,7 @@ const Login = () => {
         password: loginPassword,
       },
       withCredentials: true,
-      url: "https://myrealityweb-backend.azurewebsites.net/users/login",
+      url: "http://localhost:4000/users/login",
     }).then((res) => {
       console.log(res);
       navigate("/");

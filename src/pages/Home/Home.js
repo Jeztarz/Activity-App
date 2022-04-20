@@ -1,16 +1,18 @@
-import './Home.css'
+import "./Home.css";
 
-import Profile from '../../Components/Profile/Profile';
-import ActivityRecord from '../../Components/Record/ActivityRecord';
-import Goal from '../../Components/Goal/Goal'
-import Activity from '../../Components/Record/Activity/Activity';
+import Profile from "../../Components/Profile/Profile";
+import ActivityRecord from "../../Components/Record/ActivityRecord";
+import Goal from "../../Components/Goal/Goal";
+import Activity from "../../Components/Record/Activity/Activity";
 
-import { useState, useEffect } from 'react'
-import axios from 'axios';
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Home = () => {
-
   const [data, setData] = useState(null);
+  const [goal, setGoal] = useState();
+  const [calGoal, setCalGoal] = useState();
+
   const [profileData, setProfileData] = useState({
     displayName: "",
     aboutMe: "",
@@ -21,56 +23,76 @@ const Home = () => {
 
   const getProfileAPI = () => {
     axios({
-        method: "GET",
-        withCredentials: true,
-        url: "http://localhost:4000/users/me",
-        }).then((res) => {
-        setData(res.data);      
-        });
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/users/me",
+    }).then((res) => {
+      setData(res.data);
+      setGoal(res.data.durationGoal);
+      setCalGoal(res.data.caloriesGoal);
+      // console.log(res.data.durationGoal)
+    });
   };
 
-  useEffect( () => {
+  useEffect(() => {
     let isMounted = true;
     axios({
       method: "GET",
       withCredentials: true,
       url: "http://localhost:4000/users/me",
-      }).then((res) => {
-        if(isMounted) setData(res.data);      
-      });
-      return () => { isMounted = false}
-  },[data]);
+    }).then((res) => {
+      if (isMounted) setData(res.data);
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [data]);
 
-  const handleProfileChange = e => {
+  const handleProfileChange = (e) => {
     setProfileData({
       ...profileData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
+  
 
+  const [getFormRecords, setGetFormRecords] = useState([]);
+  const [updateRecord, setUpdateRecord] = useState(false);
+  useEffect(() => {
+    axios({
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/users/me/records",
+    }).then((res) => {
+      setGetFormRecords(res.data);
+      setUpdateRecord(!updateRecord);
+    });
+  }, [updateRecord]);
+  
 
   return (
     <div className="record-box-main">
       <section>
-      <div className='color'></div>
-      <div className='color'></div> 
-      <div className='color'></div>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
       </section>
-      <div className='userAndAddTop'>
+      <div className="userAndAddTop">
+        <Profile
+          profileData={profileData}
+          handleProfileChange={handleProfileChange}
+          setProfileData={setProfileData}
+          data={data}
+          getProfileAPI={getProfileAPI}
+        />
 
-        <Profile  profileData={profileData} handleProfileChange={handleProfileChange} setProfileData={setProfileData} data={data} getProfileAPI={getProfileAPI}/>
-
-        <Activity />
-        
+        <Activity setUpdateRecord={setUpdateRecord}/>
       </div>
-      
-        <Goal />
-        <ActivityRecord />
-      
 
-
+      <Goal goal={goal} calGoal={calGoal} getFormRecords={getFormRecords}/>
+      <ActivityRecord getFormRecords={getFormRecords} />
     </div>
-  )
-}
+  );
+};
 export default Home;

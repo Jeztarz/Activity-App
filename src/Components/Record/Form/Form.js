@@ -5,22 +5,33 @@ import "./Form.css";
 function Form(props) {
   const sumDuration = parseInt(props.form.mn) + parseInt(props.form.hr) * 60;
 
-  
-    const records = () => {
-        
-      axios({
-        method: "POST",
-        data: {
-          activityName: props.form.actTypes,
-          timestamp: props.form.date,
-          duration: sumDuration,
-          calories: props.form.cal,
-          description: props.form.des,
-        },
-        withCredentials: true,
-        url: "http://localhost:4000/users/me/records",
-      }).then((res) => console.log(res));
-    };
+  const records = (e) => {
+    e.preventDefault();
+    axios({
+      method: "POST",
+      data: {
+        activityName: props.form.actTypes,
+        timestamp: props.form.date,
+        duration: sumDuration,
+        calories: props.form.cal,
+        description: props.form.des,
+      },
+      withCredentials: true,
+      url: "http://localhost:4000/users/me/records",
+    }).then((res) => {
+      console.log(res);
+      props.setUpdateRecord(true);
+      props.setSlideAct(0)
+      props.setForm({
+        actTypes: "",
+        date: "",
+        hr: 0,
+        mn: 0,
+        cal: 0,
+        des: "",
+      })
+    });
+  };
 
   return (
     <div className="typeInput">

@@ -6,8 +6,19 @@ import LogoutButton from "../../pages/Login/LogoutButton";
 function Profile(props) {
   const [toggleEdit, setToggleEdit] = useState(false);
 
+  
+  const initProfileDataForm = () => {
+    props.setProfileData({
+      displayName: props.data.displayName,
+      aboutMe: props.data.aboutMe,
+      favorite: props.data.favorite,
+      minGoal: props.data.durationGoal,
+      calGoal: props.data.caloriesGoal,
+    });
+    setToggleEdit(!toggleEdit);
+  };
 
-  const editProfileAPI = () => {
+  const editProfileData = () => {
     axios({
       method: "PUT",
       data: {
@@ -15,27 +26,14 @@ function Profile(props) {
         aboutMe: props.profileData.aboutMe,
         displayName: props.profileData.displayName,
         durationGoal: props.profileData.minGoal,
-        caloriesGoal: props.profileData.calGoal
+        caloriesGoal: props.profileData.calGoal,
       },
       withCredentials: true,
       url: "http://localhost:4000/users/edit",
-    }).then((res) => {});
-  };
-  const initProfileDataForm = () => {
-    props.setProfileData({
-      displayName: props.data.displayName,
-      aboutMe: props.data.aboutMe,
-      favorite: props.data.favorite,
-      minGoal: props.data.durationGoal,
-      calGoal: props.data.caloriesGoal
+    }).then((res) => {
+      setToggleEdit(false);
+      props.getProfileAPI();
     });
-    setToggleEdit(!toggleEdit);
-  };
-
-  const editProfileData = () => {
-    editProfileAPI();
-    setToggleEdit(false);
-    props.getProfileAPI();
   };
 
   return (
