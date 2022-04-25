@@ -2,6 +2,10 @@ import React from "react";
 import "./Timer.css";
 
 function Timer(props) {
+  function switchButton() {
+    props.Start(!props.Start);
+  }
+
   function toggle() {
     props.setIsActive(!props.isActive);
   }

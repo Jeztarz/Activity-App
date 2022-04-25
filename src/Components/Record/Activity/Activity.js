@@ -41,22 +41,58 @@ function Activity(props) {
   };
 
   const next = () => {
-    if (slideAct === ACITIVITIES_TYPE.length - 1) {
+    if (slideAct === ACITIVITIES_TYPE.length -1) {
       setSlideAct(0);
+      setForm({
+        ...form,
+        actTypes: ACITIVITIES_TYPE[0].label
+      });
     } else {
       const nextSide = slideAct + 1;
       setSlideAct(nextSide);
+      setForm({
+        ...form,
+        actTypes: ACITIVITIES_TYPE[nextSide].label
+      });
     }
   };
 
   const previous = () => {
     if (slideAct === 0) {
-      setSlideAct(ACITIVITIES_TYPE.length - 1);
+      setSlideAct(ACITIVITIES_TYPE.length -1);
+      setForm({
+        ...form,
+        actTypes: ACITIVITIES_TYPE[ACITIVITIES_TYPE.length -1].label
+      });
     } else {
       const nextSide = slideAct - 1;
       setSlideAct(nextSide);
+      setForm({
+        ...form,
+        actTypes: ACITIVITIES_TYPE[nextSide].label
+      });
     }
   };
+
+  // const next = () => {
+  //   if (slideAct === ACITIVITIES_TYPE.length - 1) {
+  //     setSlideAct(0);
+  //   } else {
+  //     const nextSide = slideAct + 1;
+  //     setSlideAct(nextSide);
+  //   }
+  // };
+
+  // const previous = () => {
+  //   if (slideAct === 0) {
+  //     setSlideAct(ACITIVITIES_TYPE.length - 1);
+  //   } else {
+  //     const nextSide = slideAct - 1;
+  //     setSlideAct(nextSide);
+  //   }
+  // };
+
+
 
   useEffect(() => {
     let interval = null;
@@ -70,31 +106,6 @@ function Activity(props) {
     return () => clearInterval(interval);
   }, [isActive, seconds]);
 
-  const Finsih = () => {
-    const hrTimer = Math.floor(seconds / 3600);
-    const mnTimer = Math.floor(seconds / 60) % 60;
-    const todayDate = new Date();
-    const convertdate = (date) => {
-      const arrayDate = todayDate.toLocaleDateString().split("/");
-      const sufferDate = [
-        arrayDate[2],
-        (arrayDate[0] < 10 ? "0" : "") + arrayDate[0],
-        (arrayDate[1] < 10 ? "0" : "") + arrayDate[1],
-      ];
-      return sufferDate.join("-");
-    };
-    const newDate = convertdate(todayDate);
-    console.log(newDate);
-    setForm({
-      ...form,
-      hr: hrTimer,
-      mn: mnTimer,
-      actTypes: ACITIVITIES_TYPE[slideAct].label,
-      date: newDate,
-    });
-    setSeconds(0);
-    setIsActive(false);
-  };
 
   return (
     <div className="box-right">
@@ -106,7 +117,7 @@ function Activity(props) {
             isActive={isActive}
             setSeconds={setSeconds}
           />
-          <div className="divTree">
+          <div>
             <section className="slider">
               <img
                 src="./Images/arrow-left-color.png"
@@ -115,7 +126,7 @@ function Activity(props) {
                 alt="left"
               />
               <img
-                src={ACITIVITIES_TYPE[slideAct].actSrc}
+                src={ACITIVITIES_TYPE[slideAct] && ACITIVITIES_TYPE[slideAct].actSrc}
                 alt="no internet"
                 className="image"
               />
@@ -126,16 +137,11 @@ function Activity(props) {
                 alt="right"
               />
             </section>
-            <div className="button-record">
-              <button className="button" onClick={Finsih}>
-                record to your activity
-              </button>
-            </div>
+            
           </div>
         </div>
 
         <div className="activityForm">
-          <h2>Your Activity </h2>
           <form>
             <Form
               form={form}

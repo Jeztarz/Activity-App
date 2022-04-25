@@ -4,9 +4,12 @@ import "./Form.css";
 
 function Form(props) {
   const sumDuration = parseInt(props.form.mn) + parseInt(props.form.hr) * 60;
-
+  
   const records = (e) => {
     e.preventDefault();
+    // if (!props.form.actTypes || !props.form.date ){
+    //   return
+    // }
     axios({
       method: "POST",
       data: {
@@ -21,7 +24,7 @@ function Form(props) {
     }).then((res) => {
       console.log(res);
       props.setUpdateRecord(true);
-      props.setSlideAct(0)
+      // props.setSlideAct()
       props.setForm({
         actTypes: "",
         date: "",
@@ -78,7 +81,7 @@ function Form(props) {
         <label>&nbsp;Minute</label>
       </div>
       <div>
-        <label>Calorie&nbsp;&nbsp;</label>
+        <label>Calories&nbsp;&nbsp;</label>
         <input
           type="number"
           value={props.form.cal}
@@ -98,7 +101,7 @@ function Form(props) {
           value={props.form.des}
           onChange={props.handleChange}></textarea>
       </div>
-      <button type="submit" className="button" onClick={records}>
+      <button type="submit" className="button-save" onClick={records}>
         SAVE
       </button>
     </div>

@@ -18,6 +18,8 @@
     width: 100%;
 }
 
+
+
 .BoxDown {
     margin-top: 12px;
     width: 100%;
@@ -33,7 +35,6 @@
     border-radius: 20px;
     backdrop-filter: blur(5px);
     background: rgba(255, 255,255,0.2);
-    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
     border: 1px solid rgba(255, 255,255,0.5);
     border-right: 1px solid rgba(255, 255,255,0.2);
     border-bottom: 1px solid rgba(255, 255,255,0.2);
@@ -47,3 +48,14 @@
   .fontW {
     font-weight: bold; 
   }
+
+.openModal {
+    background: transparent;
+    border: none;
+}
+
+.readMore {
+    width: 20px;
+    filter: invert(14%) sepia(33%) saturate(5203%) hue-rotate(311deg) brightness(87%) contrast(117%);;
+   
+}

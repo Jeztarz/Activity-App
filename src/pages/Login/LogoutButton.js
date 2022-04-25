@@ -14,10 +14,15 @@ function LogoutButton() {
     });
     setData(null);
   };
+  
 
   return (
-    <button type="button" className="edit-profile" onClick={logOut}>
-      <Link to="/login">Logout</Link>
+    <button type="button" className="logout" onClick={logOut}>
+      <Link to="/login"><img
+                  src="../../Images/logout.png"
+                  alt="readMore"
+                  className="readMore"
+                />Logout</Link>
     </button>
   );
 }

@@ -46,7 +46,7 @@ function Profile(props) {
         {/*DisplayName */}
         {toggleEdit ? (
           <input
-            className="editUser"
+            className="editUserDisplayName"
             type="text"
             placeholder="change display name"
             name="displayName"
@@ -64,7 +64,7 @@ function Profile(props) {
           <p>AboutMe</p>
           {toggleEdit ? (
             <input
-              className="editUserAbout"
+              className="editUser"
               type="text"
               placeholder="Entre your about me"
               name="aboutMe"
@@ -83,7 +83,7 @@ function Profile(props) {
           <p>Favorite</p>
           {toggleEdit ? (
             <input
-              className="editUserAbout"
+              className="editUser"
               type="text"
               placeholder="Enter your favorite"
               name="favorite"
@@ -100,7 +100,7 @@ function Profile(props) {
           <div className="data-profile-user">
             <p>Duration Goal</p>
             <input
-              className="editUserAbout"
+              className="editUser"
               type="text"
               placeholder="Enter your duration goal"
               name="minGoal"
@@ -114,7 +114,7 @@ function Profile(props) {
           <div className="data-profile-user">
             <p>Calories Goal</p>
             <input
-              className="editUserAbout"
+              className="editUser"
               type="text"
               placeholder="Enter your calories goal"
               name="calGoal"

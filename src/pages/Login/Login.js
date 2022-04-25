@@ -2,6 +2,8 @@ import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import Swal from "sweetalert2";
+
 
 const Login = () => {
   const [loginUsername, setLoginUsername] = useState("");
@@ -17,10 +19,29 @@ const Login = () => {
       withCredentials: true,
       url: "http://localhost:4000/users/login",
     }).then((res) => {
+      Toast.fire({
+        icon: 'success',
+        title: 'Signed in successfully'
+      });
       console.log(res);
       navigate("/");
     });
   };
+
+  const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 1500,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+
+
+
 
   return (
     <section>

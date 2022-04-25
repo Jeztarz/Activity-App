@@ -55,8 +55,6 @@ const Home = () => {
     });
   };
 
-  
-
   const [getFormRecords, setGetFormRecords] = useState([]);
   const [updateRecord, setUpdateRecord] = useState(false);
   useEffect(() => {
@@ -69,16 +67,10 @@ const Home = () => {
       setUpdateRecord(!updateRecord);
     });
   }, [updateRecord]);
-  
 
   return (
-    <div className="record-box-main">
-      <section>
-        <div className="color"></div>
-        <div className="color"></div>
-        <div className="color"></div>
-      </section>
-      <div className="userAndAddTop">
+    <div className="glass">
+      <div className="dashboard">
         <Profile
           profileData={profileData}
           handleProfileChange={handleProfileChange}
@@ -86,12 +78,19 @@ const Home = () => {
           data={data}
           getProfileAPI={getProfileAPI}
         />
-
-        <Activity setUpdateRecord={setUpdateRecord}/>
+        
       </div>
 
+
+      <div className="mainBox">
+        
       <Goal goal={goal} calGoal={calGoal} getFormRecords={getFormRecords}/>
+      <Activity setUpdateRecord={setUpdateRecord} />
       <ActivityRecord getFormRecords={getFormRecords} />
+      </div>
+      
+
+
     </div>
   );
 };

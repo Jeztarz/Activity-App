@@ -1,45 +1,48 @@
-.typeInput {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-actType {
-    display: flex;
-    align-items: center;
-}
-
 .typeInput input {
-    border: none;
-    border-radius: 7px;
-    color: rgb(93, 92, 92);
-    margin-bottom: 5px;
-    transition: all 250ms ease-in-out;
     text-align: center;
-}
-.typeInput input:focus {
-    outline: none;
-    box-shadow: 0px 0px 10px 1px #be1268fa;
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.485);
+    background-color:rgba(255, 255, 255, 0);
+    color: rgba(213, 14, 130, 0.9);
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .typeInput textarea {
-    border: none;
-    border-radius: 7px;
-    min-width: 18em;
-    color: rgb(93, 92, 92);
-    margin-bottom: 5px;
-    transition: all 250ms ease-in-out;
+    text-align:start;
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.485);
+    background-color:rgba(255, 255, 255, 0);
+    color: rgba(213, 14, 130, 0.9);
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-.typeInput textarea:focus{
+.typeInput input:focus {
     outline: none;
-    box-shadow: 0px 0px 10px 1px #be1268fa;
 }
 
-.typeInput label {
-    font-size: 20px;
+.typeInput textarea:focus {
+    outline: none;
 }
 
-#duration {
-    font-size: 30px
+.button-save {
+    background-color: rgba(253, 253, 253, 0);
+    border: 2px solid rgb(246, 238, 241);
+    border-radius: 20px;
+    color: rgb(184, 8, 102);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 1s;
+    
+}
+.button-save:hover{
+  background: rgb(231, 68, 155);
+  color: #fff;
+  box-shadow: 2px 3px 4px rgba(248, 248, 248, 0.055)
 }
 
