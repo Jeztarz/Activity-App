@@ -17,7 +17,7 @@ function Activity(props) {
       actSrc: "../../Images/Activity-Pictures/swimming.png",
     },
     { label: "Walking", actSrc: "../../Images/Activity-Pictures/walk.png" },
-    { label: "Weight", actSrc: "../../Images/Activity-Pictures/Weight.png" },
+    { label: "Weight", actSrc: "../../Images/Activity-Pictures/weight.png" },
   ];
 
   const [slideAct, setSlideAct] = useState(0);
@@ -41,35 +41,35 @@ function Activity(props) {
   };
 
   const next = () => {
-    if (slideAct === ACITIVITIES_TYPE.length -1) {
+    if (slideAct === ACITIVITIES_TYPE.length - 1) {
       setSlideAct(0);
       setForm({
         ...form,
-        actTypes: ACITIVITIES_TYPE[0].label
+        actTypes: ACITIVITIES_TYPE[0].label,
       });
     } else {
       const nextSide = slideAct + 1;
       setSlideAct(nextSide);
       setForm({
         ...form,
-        actTypes: ACITIVITIES_TYPE[nextSide].label
+        actTypes: ACITIVITIES_TYPE[nextSide].label,
       });
     }
   };
 
   const previous = () => {
     if (slideAct === 0) {
-      setSlideAct(ACITIVITIES_TYPE.length -1);
+      setSlideAct(ACITIVITIES_TYPE.length - 1);
       setForm({
         ...form,
-        actTypes: ACITIVITIES_TYPE[ACITIVITIES_TYPE.length -1].label
+        actTypes: ACITIVITIES_TYPE[ACITIVITIES_TYPE.length - 1].label,
       });
     } else {
       const nextSide = slideAct - 1;
       setSlideAct(nextSide);
       setForm({
         ...form,
-        actTypes: ACITIVITIES_TYPE[nextSide].label
+        actTypes: ACITIVITIES_TYPE[nextSide].label,
       });
     }
   };
@@ -92,8 +92,6 @@ function Activity(props) {
   //   }
   // };
 
-
-
   useEffect(() => {
     let interval = null;
     if (isActive) {
@@ -105,7 +103,6 @@ function Activity(props) {
     }
     return () => clearInterval(interval);
   }, [isActive, seconds]);
-
 
   return (
     <div className="box-right">
@@ -126,7 +123,10 @@ function Activity(props) {
                 alt="left"
               />
               <img
-                src={ACITIVITIES_TYPE[slideAct] && ACITIVITIES_TYPE[slideAct].actSrc}
+                src={
+                  ACITIVITIES_TYPE[slideAct] &&
+                  ACITIVITIES_TYPE[slideAct].actSrc
+                }
                 alt="no internet"
                 className="image"
               />
@@ -137,7 +137,6 @@ function Activity(props) {
                 alt="right"
               />
             </section>
-            
           </div>
         </div>
 
