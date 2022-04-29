@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const client = axios.create({
-  baseURL: 'http://localhost:4000',
+  baseURL: 'https://final-project-backend-two.vercel.app',
   validateStatus: () => true,
 });
 

@@ -25,7 +25,7 @@ const Home = () => {
     axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:4000/users/me",
+      url: "https://final-project-backend-two.vercel.app/users/me",
     }).then((res) => {
       setData(res.data);
       setGoal(res.data.durationGoal);
@@ -39,7 +39,7 @@ const Home = () => {
     axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:4000/users/me",
+      url: "https://final-project-backend-two.vercel.app/users/me",
     }).then((res) => {
       if (isMounted) setData(res.data);
     });
@@ -61,7 +61,7 @@ const Home = () => {
     axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:4000/users/me/records",
+      url: "https://final-project-backend-two.vercel.app/users/me/records",
     }).then((res) => {
       setGetFormRecords(res.data);
       setUpdateRecord(!updateRecord);

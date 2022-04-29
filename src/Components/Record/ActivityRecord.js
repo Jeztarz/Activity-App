@@ -7,7 +7,7 @@ function ActivityRecord(props) {
     axios({
       method: "DELETE",
       withCredentials: true,
-      url: `http://localhost:4000/users/me/records/${id}`,
+      url: `https://final-project-backend-two.vercel.app/users/me/records/${id}`,
     }).then((res) => {console.log(res)});
   }
   
