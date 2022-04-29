@@ -6,16 +6,10 @@ import Form from "../Form/Form";
 function Activity(props) {
   const ACITIVITIES_TYPE = [
     { label: "Running", actSrc: "../../Images/Activity-Pictures/running.png" },
-    {
-      label: "Badminton",
-      actSrc: "../../Images/Activity-Pictures/badminton.png",
-    },
+    { label: "Badminton", actSrc: "../../Images/Activity-Pictures/badminton.png" },
     { label: "Bike", actSrc: "../../Images/Activity-Pictures/bike.png" },
     { label: "Jumping", actSrc: "../../Images/Activity-Pictures/jump.png" },
-    {
-      label: "Swimming",
-      actSrc: "../../Images/Activity-Pictures/swimming.png",
-    },
+    { label: "Swimming", actSrc: "../../Images/Activity-Pictures/swimming.png" },
     { label: "Walking", actSrc: "../../Images/Activity-Pictures/walk.png" },
     { label: "Weight", actSrc: "../../Images/Activity-Pictures/weight.png" },
   ];
