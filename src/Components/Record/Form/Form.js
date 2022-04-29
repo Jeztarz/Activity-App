@@ -20,7 +20,7 @@ function Form(props) {
         description: props.form.des,
       },
       withCredentials: true,
-      url: "http://localhost:4000/users/me/records",
+      url: "https://final-project-backend-two.vercel.app/users/me/records",
     }).then((res) => {
       console.log(res);
       props.setUpdateRecord(true);

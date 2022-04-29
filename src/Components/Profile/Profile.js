@@ -29,7 +29,7 @@ function Profile(props) {
         caloriesGoal: props.profileData.calGoal,
       },
       withCredentials: true,
-      url: "http://localhost:4000/users/edit",
+      url: "https://final-project-backend-two.vercel.app/users/edit",
     }).then((res) => {
       setToggleEdit(false);
       props.getProfileAPI();
